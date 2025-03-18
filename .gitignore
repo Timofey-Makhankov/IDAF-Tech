@@ -1,0 +1,9 @@
+# latex build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+main.pdf
+*.gz
+# output folder set in .vscode folder
+dist

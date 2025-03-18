@@ -1,18 +1,31 @@
-\documentclass{article}
+\documentclass[12pt, a4paper]{report}
 
-\author{Timofey Makhankov}
-\title{IDAF Projekt}
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{{images/}} % set default images location
+
+\usepackage[T1]{fontenc} % Adds support for Extra glyphs for Latin
+\usepackage{helvet} % Helvetica clone font
+\renewcommand{\familydefault}{\sfdefault} % makes latex use sans-serif instead of serif
+
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\title{IDAF Physik}
+\author{Timofey Makhankov, Niel Müller, Samuel Muggli}
+\date{18. März 2025}
+
 
 \begin{document}
 \maketitle
-This is some Text
-Adding some more tex
+\begin{abstract}
 
-Testinf
-
-Added mote Text
-
-Added some more tex
-
-\section{Title of Section}
+\end{abstract}
+\chapter{Inhalt}
+\section{Prelogue}
+\section{Einleitung}
+\subfile{chapters/Material und Methoden}
+\section{Resultate}
+\section{Auswertung}
+\section{Ausblick}
+\section{Literaturquellen}
+\section{Bildnachweise}
 \end{document}

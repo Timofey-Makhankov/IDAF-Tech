@@ -3,7 +3,9 @@
 *.fdb_latexmk
 *.fls
 *.log
+*.toc
 main.pdf
 *.gz
 # output folder set in .vscode folder
 dist
+/.idea/

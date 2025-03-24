@@ -6,26 +6,31 @@
 \usepackage[T1]{fontenc} % Adds support for Extra glyphs for Latin
 \usepackage{helvet} % Helvetica clone font
 \renewcommand{\familydefault}{\sfdefault} % makes latex use sans-serif instead of serif
+\renewcommand*\contentsname{Inhaltsverzeichnis}
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display] % Remove extra Chapter Titles because they look shit
+{\normalfont\bfseries}{}{0pt}{\Huge}
 
 \usepackage{subfiles} % Best loaded last in the preamble
 
-\title{IDAF Physik}
+\title{Interdisziplinäre Projektarbeit – Physik und Mathematik – BM 2 (IDAF B)}
 \author{Timofey Makhankov, Niel Müller, Samuel Muggli}
 \date{18. März 2025}
 
 
 \begin{document}
 \maketitle
-\begin{abstract}
+\tableofcontents
 
-\end{abstract}
-\chapter{Inhalt}
-\section{Prelogue}
-\section{Einleitung}
-\subfile{chapters/Material und Methoden}
-\section{Resultate}
-\section{Auswertung}
-\section{Ausblick}
-\section{Literaturquellen}
-\section{Bildnachweise}
+% Start Chapters
+\subfile{chapters/Einleitung.tex}
+\subfile{chapters/Experimenteller Teil.tex}
+\subfile{chapters/Messprotokolle.tex}
+\subfile{chapters/Statistik.tex}
+\subfile{chapters/Diskussion.tex}
+\subfile{chapters/Zusammenfassende Tabellen.tex}
+% End of Chapters
+
 \end{document}

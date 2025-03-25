@@ -6,7 +6,17 @@
 \usepackage[T1]{fontenc} % Adds support for Extra glyphs for Latin
 \usepackage{helvet} % Helvetica clone font
 \renewcommand{\familydefault}{\sfdefault} % makes latex use sans-serif instead of serif
-\renewcommand*\contentsname{Inhaltsverzeichnis}
+\renewcommand*\contentsname{Inhaltsverzeichnis} % Change Contents to Inhaltsverzeichnis
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+\urlstyle{rm}
+
 
 \usepackage{titlesec}
 
@@ -31,6 +41,7 @@
 \subfile{chapters/Statistik.tex}
 \subfile{chapters/Diskussion.tex}
 \subfile{chapters/Zusammenfassende Tabellen.tex}
+\subfile{chapters/quellen.tex}
 % End of Chapters
 
 \end{document}

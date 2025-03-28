@@ -4,6 +4,8 @@
 *.fls
 *.log
 *.toc
+*.lof
+*.out
 main.pdf
 *.gz
 # output folder set in .vscode folder

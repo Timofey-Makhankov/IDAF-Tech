@@ -1,31 +1,26 @@
 \documentclass[12pt, a4paper]{report}
+\usepackage[utf8]{inputenc} % translation from ASCII Characters to defined encoding
+\usepackage[main=ngerman,provide=*]{babel} % Dummer Bug mit provide, dann funktioniert es ohne Probleme mit dem language Pack
 
 \usepackage{graphicx} % Required for inserting images
 \graphicspath{{images/}} % set default images location
+
 \usepackage[rightcaption]{sidecap}
 
 \usepackage[T1]{fontenc} % Adds support for Extra glyphs for Latin
 \usepackage{helvet} % Helvetica clone font
 \renewcommand{\familydefault}{\sfdefault} % makes latex use sans-serif instead of serif
-\renewcommand*\contentsname{Inhaltsverzeichnis} % Change Contents to Inhaltsverzeichnis
-\usepackage[main=ngerman,provide=*]{babel} % Dummer Bug mit provide, dann funktioniert es ohne Probleme mit dem language Pack
+
 \usepackage{amsmath}
 \usepackage{amssymb} % Optional
 \usepackage[most]{tcolorbox}
-\tcbset{
-    colback=gray!10,
-    colframe=gray!50,
-    boxrule=0.5pt,
-    arc=2mm,
-    left=2mm,
-    right=2mm,
-    top=1mm,
-    bottom=1mm,
-    fonttitle=\bfseries,
-}
 
-% Links
-\usepackage{hyperref}
+\usepackage{booktabs} % Extra styling for tables
+\usepackage[table, dvipsnames]{xcolor} % Enables Color to be used in a table
+
+\usepackage[ngerman]{datetime2} % Easy date creation and management
+
+\usepackage{hyperref} % Working with links
 \hypersetup{
     colorlinks=true,
     linkcolor=black, % For something like table of content
@@ -33,7 +28,7 @@
 }
 \urlstyle{rm}
 
-\usepackage{titlesec}
+\usepackage{titlesec} % Extra Options for editing the title formatting
 
 \titleformat{\chapter}[display] % Remove extra Chapter Titles because they look shit
 {\normalfont\bfseries}{}{0pt}{\Huge}
@@ -42,8 +37,7 @@
 
 \title{Interdisziplinäre Projektarbeit – Physik und Mathematik – BM 2 (IDAF B)}
 \author{Timofey Makhankov, Niel Müller, Samuel Muggli}
-\date{18. März 2025}
-
+\date{\today}
 
 \begin{document}
 \maketitle

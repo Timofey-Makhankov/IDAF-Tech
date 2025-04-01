@@ -11,3 +11,4 @@ main.pdf
 # output folder set in .vscode folder
 dist
 /.idea/
+out
